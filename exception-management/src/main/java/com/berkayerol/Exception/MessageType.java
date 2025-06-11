@@ -1,0 +1,19 @@
+package com.berkayerol.Exception;
+
+import lombok.Getter;
+
+@Getter
+public enum MessageType {
+
+    NO_RECORD_EXIST("1001", "Kayıt bulunamadı ! "),
+    GENERAL_EXCEPTION("0000","Genel bir hata oluştu !");
+
+    private String code;
+
+    private String message;
+
+    MessageType(String code, String message) {
+        this.code = code;
+        this.message = message;
+    }
+}
